@@ -41,9 +41,9 @@ export default function AboutPage() {
         </p>
         <p className="text-base text-muted leading-relaxed">
           Beyond building, I&apos;m deeply invested in growing the AI community
-          in Nigeria. As a lead at Google Developer Groups (GDG) and Data Science
-          Nigeria (DSN AI+), I&apos;ve mentored over 500 students and organized
-          workshops on machine learning, NLP, and embedded AI.
+          in Nigeria. As a core organizer at GDG Akure, 2x co-lead at GDSC FUTA,
+          and deputy/acting lead at DSN AI+, I&apos;ve mentored over 500 students
+          and organized workshops on machine learning, NLP, and embedded AI.
         </p>
       </div>
 
@@ -121,7 +121,7 @@ export default function AboutPage() {
         <div className="space-y-3">
           <div className="border border-card-border rounded-lg p-4 bg-card">
             <p className="font-medium text-sm">
-              Lead — Google Developer Groups (GDG), Akure
+              Core Organizer — Google Developer Groups (GDG), Akure
             </p>
             <p className="text-sm text-muted">
               Organizing workshops and events on ML, NLP, and AI for developers
@@ -129,7 +129,15 @@ export default function AboutPage() {
           </div>
           <div className="border border-card-border rounded-lg p-4 bg-card">
             <p className="font-medium text-sm">
-              Lead — Data Science Nigeria (DSN AI+)
+              2x Co-Lead — Google Developer Student Clubs (GDSC), FUTA
+            </p>
+            <p className="text-sm text-muted">
+              Leading student developer community and organizing technical workshops
+            </p>
+          </div>
+          <div className="border border-card-border rounded-lg p-4 bg-card">
+            <p className="font-medium text-sm">
+              Deputy Lead / Acting Lead — Data Science Nigeria (DSN AI+)
             </p>
             <p className="text-sm text-muted">
               Mentoring 500+ students in machine learning and data science
