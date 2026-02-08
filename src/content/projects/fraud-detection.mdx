@@ -1,24 +1,24 @@
 ---
-title: "Real-Time Fraud Detection System"
+title: "Real-Time Fraud Detection — Adhere"
 ---
 
 ## Overview
 
-Built at Adhere (by SmartComply), this system combines a transaction rule validation agent with supervised and unsupervised fraud detection models, all operating at sub-2-second latency during live transaction processing.
+Built at Adhere (a SmartComply subsidiary), this fraud detection system combines supervised and unsupervised machine learning models for live transaction monitoring, catching both known fraud patterns and novel zero-day attacks.
 
-## Components
-
-### Rule Generation Agent
-An LLM-powered agent that generates Python and SQL validation code in real-time during transaction processing. Given a set of business rules, it produces executable validation logic on the fly.
+## Approach
 
 ### Supervised Models
-Traditional ML classifiers trained on labeled fraud/legitimate transaction data for known fraud patterns.
+ML classifiers trained on labeled fraud/legitimate transaction data to recognize known fraud patterns — account takeover, card testing, transaction velocity abuse, and other established fraud vectors.
 
 ### Unsupervised Models
-Anomaly detection for identifying novel fraud patterns not seen in training data — catching zero-day fraud attacks.
+Anomaly detection models that identify unusual transaction patterns without relying on labeled data. These catch novel fraud strategies that haven't been seen before — the zero-day attacks of the financial world.
+
+### Combined Strategy
+By running both supervised and unsupervised models in parallel, the system achieves high recall on known patterns while maintaining the ability to flag genuinely new threats.
 
 ## Performance
 
-- **Sub-2-second latency** for end-to-end transaction validation
-- Real-time code generation and execution during live processing
-- Combined supervised + unsupervised approach catches both known and novel fraud patterns
+- Real-time scoring during live transaction processing
+- Combined approach catches both known and novel fraud patterns
+- Integrated with the broader Adhere transaction monitoring pipeline

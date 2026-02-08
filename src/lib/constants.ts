@@ -91,12 +91,23 @@ export const projects: Project[] = [
     tags: ["RAG", "Startup", "NLP", "Multilingual", "LLM"],
     type: "Startup",
     year: "2024–Present",
+    demo: "https://eusate.com",
+  },
+  {
+    slug: "transaction-rule-agent",
+    title: "Transaction Rule Validation Agent — Adhere",
+    description:
+      "Multi-agent system with SQL Agent and Python Agent that validates transactions against business rules in real-time. Agents generate and execute code in isolated containers with sub-2-second latency.",
+    tags: ["Agents", "LLM", "FinTech", "Code Generation", "Production"],
+    type: "Production",
+    year: "2024–Present",
+    featured: true,
   },
   {
     slug: "fraud-detection",
-    title: "Real-Time Fraud Detection System",
+    title: "Real-Time Fraud Detection — Adhere",
     description:
-      "Built transaction rule validation agent generating Python and SQL code during live processing with sub-2-second latency, plus supervised and unsupervised fraud models.",
+      "Advanced fraud detection system combining supervised ML classifiers for known patterns with unsupervised anomaly detection for zero-day fraud, built for live transaction monitoring.",
     tags: ["Fraud Detection", "FinTech", "ML", "Real-time", "Production"],
     type: "Production",
     year: "2024–Present",

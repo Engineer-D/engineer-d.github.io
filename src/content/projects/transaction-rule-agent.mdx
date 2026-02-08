@@ -1,0 +1,40 @@
+---
+title: "Transaction Rule Validation Agent — Adhere"
+---
+
+## Overview
+
+Built at Adhere (a SmartComply subsidiary), this is a multi-agent system that validates whether transactions comply with business-defined rules in real-time. The system consists of two specialized agents — a SQL Agent and a Python Agent — that generate and execute validation code inside isolated containers.
+
+## Architecture
+
+### The Multi-Agent System
+
+The Transaction Rule Validation Agent operates as a coordinator over two specialized agents:
+
+**SQL Agent** — Generates SQL queries to validate transactions against rule conditions stored in databases. Given a business rule (e.g., "transactions above $10,000 require manager approval"), the agent produces the appropriate SQL to check compliance.
+
+**Python Agent** — Generates Python code for complex rule validations that go beyond what SQL can express — multi-step logic, conditional chains, cross-referencing external data, and custom business logic.
+
+### Isolated Execution
+
+Both agents generate code that runs inside **isolated containers**, ensuring:
+- Security: generated code cannot access production systems
+- Reliability: failures in validation don't affect transaction processing
+- Auditability: every generated code snippet is logged for compliance review
+
+### Real-Time Processing
+
+The entire pipeline — rule interpretation, code generation, execution, and result — completes in **sub-2-second latency**, enabling validation during live transaction processing without blocking the payment flow.
+
+## How It Works
+
+1. A transaction enters the processing pipeline
+2. The system identifies which business rules apply
+3. The SQL and Python agents generate validation code specific to the transaction and rules
+4. Code executes in sandboxed containers
+5. Results determine whether the transaction passes or requires escalation
+
+## Impact
+
+This system enables businesses to define compliance rules in natural language and have them automatically enforced on every transaction — no manual coding required for new rules.
