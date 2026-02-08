@@ -34,6 +34,7 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  // --- Production ---
   {
     slug: "smartcomply-agents",
     title: "Production AI Agents — SmartComply",
@@ -42,6 +43,16 @@ export const projects: Project[] = [
     tags: ["LLM", "Agents", "RAG", "Cybersecurity", "Production"],
     type: "Production",
     year: "2022–Present",
+    featured: true,
+  },
+  {
+    slug: "transaction-rule-agent",
+    title: "Transaction Rule Validation Agent — Adhere",
+    description:
+      "Multi-agent system with SQL Agent and Python Agent that validates transactions against business rules in real-time. Agents generate and execute code in isolated containers with sub-2-second latency.",
+    tags: ["Agents", "LLM", "FinTech", "Code Generation", "Production"],
+    type: "Production",
+    year: "2024–Present",
     featured: true,
   },
   {
@@ -55,34 +66,15 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "viro-sales-agent",
-    title: "VIRO — Autonomous Sales Agent",
+    slug: "fraud-detection",
+    title: "Real-Time Fraud Detection — Adhere",
     description:
-      "Developed a proactive AI sales agent capable of autonomous meeting attendance, real-time conversation handling, lead research, and post-meeting pipeline automation.",
-    tags: ["Agents", "LLM", "Autonomous AI", "Sales"],
-    type: "Research",
-    year: "2024",
-    featured: true,
-  },
-  {
-    slug: "search-augmented-rl",
-    title: "Search-Augmented RL for Legal Reasoning",
-    description:
-      "Research on interpretable legal reasoning using Search-Augmented Reinforcement Learning with DPO, GRPO, and PPO for LLM alignment in specialized domains.",
-    tags: ["RL", "DPO", "GRPO", "PPO", "LLM Alignment", "Research"],
-    type: "Research",
-    year: "2024–Present",
-    featured: true,
-  },
-  {
-    slug: "teaching-assistant",
-    title: "Teaching Assistant Agent",
-    description:
-      "Intelligent teaching assistant using SFT, RLHF, PEFT, QLoRA, and GRPO with adaptive questioning strategies and personalized feedback.",
-    tags: ["SFT", "RLHF", "PEFT", "QLoRA", "GRPO", "Fine-tuning"],
-    type: "Personal",
+      "Advanced fraud detection system combining supervised ML classifiers for known patterns with unsupervised anomaly detection for zero-day fraud, built for live transaction monitoring.",
+    tags: ["Fraud Detection", "FinTech", "ML", "Real-time", "Production"],
+    type: "Production",
     year: "2024–Present",
   },
+  // --- Startup ---
   {
     slug: "eusate",
     title: "Eusate — AI Customer Support Platform",
@@ -92,24 +84,25 @@ export const projects: Project[] = [
     type: "Startup",
     year: "2024–Present",
     demo: "https://eusate.com",
-  },
-  {
-    slug: "transaction-rule-agent",
-    title: "Transaction Rule Validation Agent — Adhere",
-    description:
-      "Multi-agent system with SQL Agent and Python Agent that validates transactions against business rules in real-time. Agents generate and execute code in isolated containers with sub-2-second latency.",
-    tags: ["Agents", "LLM", "FinTech", "Code Generation", "Production"],
-    type: "Production",
-    year: "2024–Present",
     featured: true,
   },
+  // --- Research ---
   {
-    slug: "fraud-detection",
-    title: "Real-Time Fraud Detection — Adhere",
+    slug: "viro-sales-agent",
+    title: "VIRO — Autonomous Sales Agent",
     description:
-      "Advanced fraud detection system combining supervised ML classifiers for known patterns with unsupervised anomaly detection for zero-day fraud, built for live transaction monitoring.",
-    tags: ["Fraud Detection", "FinTech", "ML", "Real-time", "Production"],
-    type: "Production",
+      "Developed a proactive AI sales agent capable of autonomous meeting attendance, real-time conversation handling, lead research, and post-meeting pipeline automation.",
+    tags: ["Agents", "LLM", "Autonomous AI", "Sales"],
+    type: "Research",
+    year: "2024",
+  },
+  {
+    slug: "search-augmented-rl",
+    title: "Search-Augmented RL for Legal Reasoning",
+    description:
+      "Research on interpretable legal reasoning using Search-Augmented Reinforcement Learning with DPO, GRPO, and PPO for LLM alignment in specialized domains.",
+    tags: ["RL", "DPO", "GRPO", "PPO", "LLM Alignment", "Research"],
+    type: "Research",
     year: "2024–Present",
   },
   {
@@ -121,6 +114,16 @@ export const projects: Project[] = [
     type: "Research",
     year: "2022",
     github: "https://github.com/Engineer-D/AI-Farm-Alarm-system",
+  },
+  // --- Personal ---
+  {
+    slug: "teaching-assistant",
+    title: "Teaching Assistant Agent",
+    description:
+      "Intelligent teaching assistant using SFT, RLHF, PEFT, QLoRA, and GRPO with adaptive questioning strategies and personalized feedback.",
+    tags: ["SFT", "RLHF", "PEFT", "QLoRA", "GRPO", "Fine-tuning"],
+    type: "Personal",
+    year: "2024–Present",
   },
   {
     slug: "blindhelp",
