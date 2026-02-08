@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Github, Linkedin, Mail, Bot, Brain, Shield, Cpu } from "lucide-react";
 import { projects, siteConfig } from "@/lib/constants";
 import { ProjectCard } from "@/components/ProjectCard";
@@ -44,19 +45,33 @@ export default function Home() {
     <div className="max-w-5xl mx-auto px-4 sm:px-6">
       {/* Hero */}
       <section className="pt-20 pb-16 sm:pt-28 sm:pb-20">
-        <p className="text-accent font-medium mb-3">Hi, I&apos;m</p>
-        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
-          Oluwadamifogore Daramola
-        </h1>
-        <p className="text-xl sm:text-2xl text-muted mb-6">
-          ML/AI Engineer &middot; Agent Systems &middot; LLM Alignment
-        </p>
-        <p className="text-base text-muted max-w-2xl leading-relaxed mb-8">
-          I build production AI agents for cybersecurity, fintech, and
-          healthcare. Specializing in LLM alignment, multi-agent systems, and
-          embedded AI. Founder of{" "}
-          <span className="text-foreground font-medium">Eusate</span>.
-        </p>
+        <div className="flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between gap-8 mb-8">
+          <div className="flex-1">
+            <p className="text-accent font-medium mb-3">Hi, I&apos;m</p>
+            <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
+              Oluwadamifogore Daramola
+            </h1>
+            <p className="text-xl sm:text-2xl text-muted mb-6">
+              ML/AI Engineer &middot; Agent Systems &middot; LLM Alignment
+            </p>
+            <p className="text-base text-muted max-w-2xl leading-relaxed">
+              I build production AI agents for cybersecurity, fintech, and
+              healthcare. Specializing in LLM alignment, multi-agent systems, and
+              embedded AI. Founder of{" "}
+              <span className="text-foreground font-medium">Eusate</span>.
+            </p>
+          </div>
+          <div className="shrink-0">
+            <Image
+              src="/images/headshot.jpeg"
+              alt="Oluwadamifogore Daramola"
+              width={180}
+              height={180}
+              className="rounded-full border-2 border-card-border object-cover w-36 h-36 sm:w-44 sm:h-44"
+              priority
+            />
+          </div>
+        </div>
 
         <div className="flex flex-wrap items-center gap-4">
           <Link

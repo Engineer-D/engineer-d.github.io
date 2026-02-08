@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { talks, certifications, skills } from "@/lib/constants";
 import { Award, Mic, Users, GraduationCap } from "lucide-react";
 import type { Metadata } from "next";
@@ -11,9 +12,21 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-12 pb-20">
-      <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-8">
-        About Me
-      </h1>
+      <div className="flex flex-col sm:flex-row sm:items-center gap-6 mb-10">
+        <Image
+          src="/images/headshot.jpeg"
+          alt="Oluwadamifogore Daramola"
+          width={120}
+          height={120}
+          className="rounded-full border-2 border-card-border object-cover w-28 h-28"
+        />
+        <div>
+          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
+            About Me
+          </h1>
+          <p className="text-muted mt-1">ML/AI Engineer &middot; Lagos, Nigeria</p>
+        </div>
+      </div>
 
       {/* Bio */}
       <div className="prose prose-invert max-w-none mb-14">
