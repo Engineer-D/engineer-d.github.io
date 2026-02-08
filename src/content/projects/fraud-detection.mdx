@@ -1,0 +1,24 @@
+---
+title: "Real-Time Fraud Detection System"
+---
+
+## Overview
+
+Built at Adhere (by SmartComply), this system combines a transaction rule validation agent with supervised and unsupervised fraud detection models, all operating at sub-2-second latency during live transaction processing.
+
+## Components
+
+### Rule Generation Agent
+An LLM-powered agent that generates Python and SQL validation code in real-time during transaction processing. Given a set of business rules, it produces executable validation logic on the fly.
+
+### Supervised Models
+Traditional ML classifiers trained on labeled fraud/legitimate transaction data for known fraud patterns.
+
+### Unsupervised Models
+Anomaly detection for identifying novel fraud patterns not seen in training data — catching zero-day fraud attacks.
+
+## Performance
+
+- **Sub-2-second latency** for end-to-end transaction validation
+- Real-time code generation and execution during live processing
+- Combined supervised + unsupervised approach catches both known and novel fraud patterns

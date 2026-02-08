@@ -1,0 +1,24 @@
+---
+title: "Teaching Assistant Agent"
+---
+
+## Overview
+
+An intelligent teaching assistant that adapts to individual student learning patterns, using a full fine-tuning lifecycle: SFT, RLHF, PEFT, QLoRA, and GRPO.
+
+## Approach
+
+### Training Pipeline
+1. **SFT (Supervised Fine-Tuning)**: Initial training on curated teaching dialogues
+2. **PEFT/QLoRA**: Parameter-efficient adaptation enabling training on consumer hardware
+3. **RLHF**: Reward model trained on human preferences for teaching quality
+4. **GRPO**: Group-level policy optimization for efficient alignment
+
+### Adaptive Features
+- **Questioning Strategies**: Adjusts difficulty and question style based on student performance
+- **Personalized Feedback**: Generates explanations calibrated to the student's demonstrated understanding
+- **Progress Tracking**: Maintains a model of each student's knowledge state
+
+## Technical Details
+
+The system demonstrates the full LLM alignment lifecycle from pre-training adaptation through RLHF, using efficient techniques (PEFT, QLoRA) to make the entire pipeline tractable on limited compute.

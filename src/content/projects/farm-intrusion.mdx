@@ -1,0 +1,28 @@
+---
+title: "AI Farm Intrusion Detection"
+---
+
+## Overview
+
+An edge-deployed computer vision system for detecting farm intrusions, using a lightweight Faster R-CNN with MobileNet backbone. Achieves 97-99% accuracy while running on ESP32 cameras and Raspberry Pi hardware.
+
+## Architecture
+
+### Model
+- **Faster R-CNN** with **MobileNet** backbone — optimized for edge deployment
+- Model compression and quantization for embedded hardware constraints
+- 97-99% detection accuracy maintained after optimization
+
+### Hardware
+- **ESP32** cameras for image capture
+- **Raspberry Pi** for on-device inference
+- Low-power operation suitable for remote farm locations
+
+### System
+- Real-time detection and alerting
+- Works offline without cloud connectivity
+- Designed for harsh environmental conditions
+
+## Motivation
+
+Small-scale farmers in Nigeria face significant losses from animal and human intrusions. This system provides affordable, automated surveillance using commodity hardware.
